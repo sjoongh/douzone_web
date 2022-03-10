@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RegisterForm</title>
+<style type="text/css">
+	#member{
+		text-align: center;
+		font-weight: bold;
+		font-size: 4em;	
+	}
+	body{
+		margin: 10px;
+	}
+	sup{
+		color: red;
+	}	
+	table{
+		background-color:#AED1FF;
+		width: auto;
+		height:600px;
+		margin : auto;
+		text-align: center;
+		/* align-content: cente; */
+	}
+	table, td{
+		border: 1px solid;	
+	}
+	.item{
+		text-align: left;
+	}
+</style>
+</head>
+
+<body>
+	<p id="member">회원 정보 입력</p>
+	<hr>
+	<table>
+		<tr>
+			<td>
+				<sup>*</sup>ID
+			</td>
+			<td class="item"><input type="text" name="ID" id="ID" placeholder="ID입력" required></td>
+		</tr>
+		<tr>
+			<td>
+				<sup>*</sup>Password
+			</td>
+			<td class="item"><input type="password" name="pwd" id="pwd" placeholder="Password 입력" required></td>
+		</tr>
+		<tr>
+			<td>
+				<sup>*</sup>Password 확인
+			</td>
+			<td class="item"><input type="password" name="pwd" id="pwd" placeholder="Password 재입력" required></td>
+		</tr>
+		<tr>
+			<td>
+				<sup>*</sup>이 름
+			</td>
+			<td class="item"><input type="text" name="name" id="name" required></td>
+		</tr>
+		<tr>
+			<td>전화번호</td>
+			<td class="item">
+				<select>
+					<option>010</option>
+					<option>011</option>
+					<option>012</option>
+					<option>013</option>
+				</select>
+				 -
+				<input type="text" size="4" maxlength="4">
+				 -  
+				<input type="text" size="4" maxlength="4">
+			</td>
+		</tr>
+		<tr>
+			<td>직 업</td>
+			<td class="item">
+				<select>
+					<option>선 택</option>
+					<option>무 직</option>
+					<option>백 수</option>
+					<option>한 량</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>성 별</td>
+			<td class="item">
+				<input type="radio"> 남 <input type="radio"> 여 
+			</td>
+		</tr>
+		<tr>
+			<td>취 미</td>
+			<td class="item">
+			<input type="checkbox">독서
+			<input type="checkbox">수영
+			<input type="checkbox">게임
+			<input type="checkbox">영화감상
+			<input type="checkbox">음악듣기
+			</td>
+		</tr>
+		<tr>
+			<td>자기소개</td>
+			<td class="item">
+				<textarea rows="15" cols="70"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><br><input type="submit" value="등록하기">&nbsp;&nbsp;<input type="reset" value="취소하기"><br /></td>
+		</tr>
+	</table>
+</body>
+</html>
