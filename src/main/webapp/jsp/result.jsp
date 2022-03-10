@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<title>입력 결과 창 </title>
 </head>
 <body>
 <% 
+	request.setCharacterEncoding("UTF-8");
 	String name = request.getParameter("name");
 	String pass = request.getParameter("pwd");
 	

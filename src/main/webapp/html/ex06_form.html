@@ -2,12 +2,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title> tag - form, get/post</title>
+
+<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
 	<h4>전송방식 : get / post</h4>
 get 방식 전송 : 글자수에 제한(255), 보안에 취약하다.
-<form action="" method="get">
+<form action="../jsp.result.jsp" method="get">
+	이름 : <input type="text" name="name" id="name"> <br />
+	비번 : <input type="password" name="pwd" id="pwd"> <br />
+	<input type="submit" value="전송">
+	<input type="reset" value="취소">
+</form>
+<hr>
+<form action="../jsp.result.jsp" method="post">
 	이름 : <input type="text" name="name" id="name"> <br />
 	비번 : <input type="password" name="pwd" id="pwd"> <br />
 	<input type="submit" value="전송">
