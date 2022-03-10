@@ -2,24 +2,43 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ex07_none_standard</title>
-<style>
-	.accent {
-	font-size: 20px;
-	color: red;
-	font-weight: bold;
+<title>ex09_css</title>
+<style type="text/css">
+	.navi{
+	background:#003E00;
+	margin-top:-15px;
+	width:960px;
+	height:60px;
 	}
 
-	body, div {
-	background-color: aqua;
-	text-align: center;
+	.navi ul{
+	list-style: none;
+	height:40px;
+	padding-top:10px;
+	padding-bottom:5px;
+	}
+	.navi ul li {
+	display:inline;
+	float:left;
+	font-size:15px;
 	}
 </style>
-<script src="../css/style.css"></script>
 </head>
 <body>
-	<p>
-		이제<b>웹표준</b>의 역할을 아주 중요합니다.
-	</p>
+	<nav>
+	<ul>
+		<li><a href="#">애완경종류</a></li>
+		<li><a href="#">입양하기</a></li>
+		<li><a href="#">건강돌보기</a></li>
+		<li><a href="#">더불어살기</a></li>
+	</ul>
+	</nav>
+<br />
+선택자 div를 <div id="multi"><em>여러개<em></em></div>가 있을 경우
+선택자 p를 <p class="accent"><em>여러개<em></em></p> 있을 경우
+<p>
+	이제 <span class="accent"><em>웹표준<em></em></span>의
+	<div>역할</div>은 아주 <span class="accent">중요합니다.</span>
+</p>
 </body>
 </html>
