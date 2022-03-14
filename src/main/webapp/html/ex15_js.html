@@ -8,28 +8,8 @@
 	p { font-size: 20px; color: red; }
 </style>
 
-<script type="text/javascript">
-	window.onload =function() {
-		// alert("innerHTML : "+ document.body.innerHTML + '\n'
-			//	+ "innerText : " + document.body.innerText);
-		
-		// const
-		// let
-		var list = '';
-		list += "<ul>";
-		list += "<li>Hello</li>";
-		
-		// document.body.innerHTML = list;
-		document.getElementById("div").innerHTML=list;
-		alert(list);
-	}
-	
-	function countIncrease() {
-		var spanObj = document.getElementById("countSpan");
-		spanObj.innerHTML = parseInt(spanObj.innerHTML) + 1;
-	}
-</script>
-</head>
+<script src="./js/myScript.js" type="text/javascript"></script>
+</head+1>
 <body>
 	<span id="countSpan">0</span> 번 클릭 &nbsp; &nbsp;
 	<input type="button" value="Click" onclick="countIncrease()">
