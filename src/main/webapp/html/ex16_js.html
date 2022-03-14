@@ -5,14 +5,38 @@
 <title></title>
 </head>
 <body>
+
+<h1 id="header1"> Header-1</h1>
+<h1 id="header2"> Header-2</h1>
+
+<div>tage name으로 제어하기</div>
+<span class="change"></span>
+
+<hr><p>
 브라우저 오픈
-<p>
+<pre>
 	표기법
 	dash-case(kebab-case)
 	snake_case
 	camelCase
 	ParcelCase
+</pre>
 </p>
-<script src="../js/script.js" type="text/javascript"></script>
+<script src="../js/script_2.js" type="text/javascript"></script>
+<script type="text/javascript">
+	window.onload = function() {
+		// alert('change');
+		let header1 = document.getElementById('header1');
+		header1.innerHTML = 'JAVASCRIPT';
+		
+		document.getElementById('header2').innerHTML = "이도연";
+		
+		let div_tag = document.getElementsByTagName('div');
+		
+		// document.write(div_tag);
+		p[0].innerHTML = '사랑합니다';
+		
+	}
+</script>
 </body>
 </html>
