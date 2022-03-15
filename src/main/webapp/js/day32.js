@@ -1,5 +1,11 @@
 import random from './getRandom';
 
+
+
+//  형변환
+const b = 1
+const c = '1'
+
 console.log(123);
 
 for (let i =0; i < 3; i+= 1) {
