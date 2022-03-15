@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> ex18_js.html </title>
+<script type="text/javascript" defer src="../js/day32.js"></script>
+<script type="text/javascript">
+	let su = 123;
+	console.log(typeof 'Hello World');
+	console.log(typeof su);
+	console.log(typeof true);
+	console.log(typeof undefined);
+	console.log(typeof null);
+	console.log(typeof {});
+	console.log(typeof []);
+	
+	function getType(data) {
+		return Object.prototype.toString.call(data).slice(8, -1);
+	}
+	
+	function myFunction() {
+		window.open("ex16_js.html")
+	}
+
+	let message = prompt("이름입력요망", "");
+	document.write(message);
+	console.log(message);
+	
+	let plus = eval(message) + 100; // eval : 문자열을 수식으로 바꿈
+	
+</script>
+</head>
+<body>
+	let message
+	브라우저오픈
+	<p>
+		<a href="https://www.naver.com">네이버</a>
+	</p>
+</body>
+</html>
