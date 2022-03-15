@@ -5,6 +5,30 @@
 <title> ex18_js.html </title>
 <script type="text/javascript" defer src="../js/day32.js"></script>
 <script type="text/javascript">
+
+	function myNum() {
+		let z = "30"; // string
+		let x = 100, y = 200;
+		let su = eval("x+y"); // ""를해도 숫자로 인식해 연산 가능
+		
+		alert(x + ", " + y + ", " + su);
+		let num = z + 40;
+		let num2 = eval("2+5"); // 7이됨 string이 아닌 number로 인식
+		let su2 = eval("x + 50");
+		let su3 = 3+5;
+		let su4 = eval(8);
+		alert(typeof num + ", " + num2 + ", " + su2 + ", " + su3 + ", " + su4);
+		
+		var result = su + su3;
+		document.write(result);
+		document.getElementById('demo').innerHTML = result;
+		
+		let willEval=" ";
+		willEval += "var number = 10;<br />";
+		willEval += "alert(number);";
+		
+		eval(wiLLEval);
+	}
 	let su = 123;
 	console.log(typeof 'Hello World');
 	console.log(typeof su);
@@ -28,11 +52,35 @@
 	
 	let plus = eval(message) + 100; // eval : 문자열을 수식으로 바꿈
 	
+	function clickNumber(data) {
+		let monitor = document.getElementById("monitor");
+		// alert(monitor);
+		
+		if (data == 'clear') {
+			monitor.value = '';
+		} else if (data != '=') {
+			monitor.value = data;
+		} else {
+			monitor.value = eval(monitor.value);
+		}
+	}
+	
 </script>
 </head>
 <body>
+	<input type="text" id="monitor" /><br />
+	<input type="button" value="1" onclick="clickNumber(this.value)" />
+	<input type="button" value="2" onclick="clickNumber(this.value)" />
+	<input type="button" value="3" onclick="clickNumber(this.value)" />
+	<input type="button" value="+" onclick="clickNumber(this.value)" />
+	<input type="button" value="-" onclick="clickNumber(this.value)" />
+	<input type="button" value="%" onclick="clickNumber(this.value)" />
+	<input type="button" value="=" onclick="clickNumber(this.value)" />
+	<input type="button" value="" onclick="clickNumber(this.value)" />
 	let message
-	브라우저오픈
+	브라우저오픈<br />
+	<button onclick="myNum()">눌러봐</button>
+	<p id="demo"></p>
 	<p>
 		<a href="https://www.naver.com">네이버</a>
 	</p>
