@@ -4,6 +4,24 @@
 <meta charset="UTF-8">
 <title></title>
 <script type="text/javascript">
+	
+	var calculator; // 초기화 X
+	calculator && document.writeln('calculator.plus(2,3) :'+calculator.plus(2,3));
+	
+	calculator = { // 정의부
+			plus: function(su1, su2) {
+				return su1 + su2;
+			}
+	}
+	
+	// &&연산에서는 좌측 0, undefined, null, NaN, "" 이외의 값을 가지면 true로 평가됨
+	calculator && document.writeln('calculator(2,3)' + calculator(2,3));
+	
+	// || 연산
+	calculator.subtract || (calculator.substract = function(su1, su2) { return su1 - su2;});
+	document.write("<br/>");
+	calculator || document.writeln('calculator(2,3) : ' + calculator.subtract(2, 3));
+	
 	function makePerson() {
    var person = {
          name: "홍길동",
