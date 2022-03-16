@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript">
+	function makePerson() {
+   var person = {
+         name: "홍길동",
+         phone: "010-9872-0202",
+         addr: "서울 서대문구 연희동",
+         
+         info : function() {
+            alert("name : " + this.name + "\n"
+               + "phone : " + this.phone +"\n"
+               + "addr : " + this.addr 
+            );
+            
+            var list = '';
+            for(var key in this) {
+               list += (key + " : " + this[key] + "\n")
+            } // for end
+            
+            alert(list);
+         } // info end      
+   };
+   return person2;
+	}
+   person.info();
+   var p = makePerson("강감찬", "0000", "서울시");
+   p.info();
+   p2.info();
+   
+   let ps = [];
+   ps.push(makePerson('kingsmile', '999', 'seoul'));
+   
+   for (var i in ps) {
+	   ps[i].info()
+   }
+</script>
+</head>
+<body>
+
+</body>
+</html>

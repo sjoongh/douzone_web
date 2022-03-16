@@ -4,9 +4,51 @@
 <meta charset="UTF-8">
 <title> ex20_js.html </title>
 <script src="../js/day33.js" type="text/javascript"></script>
+<script type="text/javascript">
+	// 변수 선언
+	var a = 10; // 반드시 초기화값 적아야함
+	document.writeln(a);
+	document.writeln(isFinite(a));
+	document.writeln(isNaN(a));
+	
+	var b = 3 / 0; // 불능
+	document.writeln(c);
+	document.writeln(typeof b);
+	
+	var c = 5 * '7times'; // 숫자가 문자형으로 자동 형변환
+	document.writeln(c);
+	document.writeln(typeof c);
+	document.writeln(isFinite(c));
+	document.writeln(isNaN(c));
+	
+	function imageSize() {
+		if (backImg.style.pixelWidth < 500) {
+			backImg.style.pixelWidth += 3;
+			backImg.style.pixelWidth += 2;
+			window.set
+		}
+	}
+</script>
+<style type="text/css">
+	table {
+		border: 1px solid black;
+		width: 700px;
+		align-content: center;
+	}
+	img { border: 0 }
+</style>
 </head>
 <body>
 브라우저오픈<p/>
 <h1>head-1</h1>
+<table>
+	<tr> <td>Douzon th2 미니 홈피</td> </tr>
+	<tr>
+		<td>
+			<img alt="" src="">
+		</td>
+	</tr>
+</table>
+<marquee>Your Slide-in next goes here</marquee>
 </body>
 </html>

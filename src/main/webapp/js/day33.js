@@ -12,10 +12,17 @@ setTimeout(function() {
 	console.log('hello');
 }, 3000);
 
+function timeout() {
+	setTimeout(() => {
+		console.log('hello');
+		callback()
+	}, 3000)
+}
+
 const h1El = document.querySelector('h1')
 
 h1El.addEventListener('click', () => {
-	clearTimeout(timer);
+	clearTimeout();
 })
 
 // function
